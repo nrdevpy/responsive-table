@@ -1,3 +1,10 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
