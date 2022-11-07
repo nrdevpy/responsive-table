@@ -11,13 +11,32 @@
     min-height: 100vh;
 }
 
-table, th, td {
+table,
+thead,
+tbody,
+thead th,
+tbody td {
+    display: block;
     border-collapse: collapse;
+}
+
+th,
+td {
     border: 1px solid black;
 }
 
-th, td {
-    padding: .6rem;
+tbody tr {
+    display: table-cell;
+}
+
+thead {
+    float: left;
+}
+
+th,
+td {
+    padding: 0.6rem;
+    vertical-align: middle;
 }
 
 table {
