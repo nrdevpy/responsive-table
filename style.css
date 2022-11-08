@@ -16,33 +16,45 @@ thead,
 tbody,
 thead th,
 tbody td {
-    display: block;
     border-collapse: collapse;
 }
 
 th,
 td {
     border: 1px solid black;
-}
-
-tbody tr {
-    display: table-cell;
-}
-
-thead {
-    float: left;
-}
-
-th,
-td {
     padding: 0.6rem;
     vertical-align: middle;
 }
 
-table {
-    width: 95%;
-}
-
 th {
     background-color: coral;
+}
+
+@media screen and (max-width: 768px) {
+
+    table,
+    thead,
+    tbody,
+    thead th,
+    tbody td {
+        display: block;
+        border-collapse: collapse;
+    }
+
+    table {
+        width: 95%;
+        white-space: nowrap;
+    }
+
+    thead {
+        float: left;
+    }
+
+    tbody {
+        overflow-x: auto;
+    }
+
+    tbody tr {
+        display: table-cell;
+    }
 }
